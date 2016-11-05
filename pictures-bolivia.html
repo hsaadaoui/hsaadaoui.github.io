@@ -7,13 +7,7 @@
     <link href="http://cs109.github.io/2015/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
     <link href="http://cs109.github.io/2015/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="http://cs109.github.io/2015/assets/themes/twitter/css/kbroman.css" rel="stylesheet" type="text/css" media="all">
- 
-  <style type="text/css">
-.disable-me {
-    pointer-events: none;
-}
-  </style>
-  </head>
+   </head>
   
   
   <body>
@@ -33,9 +27,16 @@
         </div>
       </div>
     </div>
+    
+      <script type="text/javascript">  
+  $('#my-link').click(function(e)
+{
+    e.preventDefault();
+});  
+</script> 
+    
 <center>
-<a data-flickr-embed="true" class="disable-me"
-   href="https://www.flickr.com/photos/139520172@N08/albums/72157676153224775" title="Bolivia" onclick="return false">
+<a data-flickr-embed="true"  id="my-link"  href="https://www.flickr.com/photos/139520172@N08/albums/72157676153224775" title="Bolivia">
   <img src="https://c2.staticflickr.com/6/5529/30150344473_05c0055cfc_c.jpg" width="800" height="534" alt="Bolivia"></a>
   <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
   <footer>
@@ -45,9 +46,8 @@
       </footer>
     </center>  
     </div> 
-    
-    
-    
+  
+   
     <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=10044754; 
